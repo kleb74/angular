@@ -1,0 +1,6 @@
+<div class="product-list-item-container" nggHover>
+  <img [src]="product.imageUrl" />
+  <p>{{product.name}}</p>
+  <p>{{product.description}}</p>
+  <button (click)="removeItem($event)">Remove Item</button>
+</div>

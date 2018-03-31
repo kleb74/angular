@@ -1,0 +1,14 @@
+<div *ngIf="!isLoading" class="product-list-container">
+  <ngg-product-list-item
+    [routerLink]="[product.id]"
+    [product]="product"
+    *ngFor="let product of products; let i = index"
+    (productRemoved)="removeProduct(i, $event)"
+  ></ngg-product-list-item>
+</div>
+
+<ngg-spinner *ngIf="isLoading" spinnerClass="sk-circle sk-big"></ngg-spinner>
+
+
+
+<!--(click)="deleteProduct(i, product.id)"-->

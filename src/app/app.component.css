@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+  padding: 10px;
+  margin: 10px;
+}
+
+.cart-counter-container, .new-product-container {
+  display: inline-block;
+}
+
+.header-link {
+  outline: none;
+  cursor: point;
+}
+
+.active-header-link {
+  text-decoration: underline;
+}
+
+.error {
+  color: red;
+}
+
+input.ng-invalid.ng-touched {
+  color:red;
+  border: 1px solid red;
+}

@@ -1,5 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
+<!--<div style="text-align:center">
   <h1>
     Welcome to {{ title }}!
   </h1>
@@ -16,5 +16,27 @@
   <li>
     <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
   </li>
-</ul>
+</ul>-->
+
+<!--<ngg-product-list></ngg-product-list>-->
+<header *ngIf="url != '/sign-in'">
+  <div class="header-link" [routerLink]="['/products']" routerLinkActive="active-header-link" [routerLinkActiveOptions]="{exact: true}">Shop</div>
+  <div class="cart-counter-container" [routerLink]="['cart']">
+    Go to Cart ({{ cart.length }})
+  </div>
+  <div class="new-product-container">
+    <form #myForm="ngForm">
+      <span class="error" *ngIf="myForm.controls['title']?.invalid">*</span><input placeholder="title" name="title" [(ngModel)]="title" required />
+      <!--[()] es un double binding. [] yo le aviso. () el me avisa-->
+      <input placeholder="description" name="description" [(ngModel)]="description" required />
+      <button (click)="addProduct(myForm)" *ngIf="!isLoading" [disabled]="myForm.invalid">{{ addProductText}}</button>
+    </form>
+    <ngg-spinner *ngIf="isLoading" spinnerClass="sk-circle sk-small" style="position: relative; display: block;"></ngg-spinner>
+  </div>
+
+</header>
+
+<router-outlet></router-outlet>
+
+
 

@@ -1,0 +1,58 @@
+{
+  "products": [
+    {
+      "name": "asdasd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 10
+    },
+    {
+      "name": "asdasd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 14
+    },
+    {
+      "name": "asdasd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 16
+    },
+    {
+      "name": "asdasd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 17
+    },
+    {
+      "name": "asd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 18
+    },
+    {
+      "name": "asd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 19
+    },
+    {
+      "name": "asdasd",
+      "description": "asdasd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 22
+    },
+    {
+      "name": "asd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 26
+    },
+    {
+      "name": "asd",
+      "description": "asd",
+      "imageUrl": "assets/kiwi.jpg",
+      "id": 32
+    }
+  ]
+}
